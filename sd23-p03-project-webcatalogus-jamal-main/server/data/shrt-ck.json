@@ -1,0 +1,38 @@
+[
+    {
+        "title": "T-Shirt",
+        "description": "T-shirt met logoborduring.",
+        "colour": "Zwart",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/calvin-klein-t-shirt-met-logoborduring\/?reference=091\/250\/0912501000712002_pro_mod_det_01_1108_1528_1673621412.jpg",
+        "price": 69.9,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "title": "Overshirt",
+        "description": "Overshirt met relaxed fit en borstzakken.",
+        "colour": "Lichtblauw",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/calvin-klein-overshirt-met-relaxed-fit-en-borstzakken\/?reference=074\/750\/0747501003191002_pro_mod_det_01_1108_1528_1674122911.jpg",
+        "price": 129.9,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "title": "T-Shirt",
+        "description": "T-shirt met borstzak en stretch .",
+        "colour": "Rood",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/calvin-klein-t-shirt-met-borstzak-en-stretch\/?reference=074\/750\/0747508001641002_pro_mod_det_01_1108_1528_7311859.jpg",
+        "price": 24.95,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    }
+]

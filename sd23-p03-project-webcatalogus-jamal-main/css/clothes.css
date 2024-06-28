@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.clothes-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "st st sr sr so so"
+    "st st sr sr so so"
+    "st st sr sr so so"
+    "st st sr sr so so"
+    "st st sr sr so so"
+    "ft ft ft ft ft ft";
+}
+
+:root {
+    --green: rgb(0, 70, 0);
+    --tan: rgb(239, 235, 210);
+    --white: white;
+}
+
+.nba-logo {
+    margin-left: 200px;
+    margin-top: 5px;
+    float: left;
+    color: var(--tan);
+}
+ 
+.top-nav {
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 190px;
+}
+ 
+.top-nav>a {
+    background-color: var(--green);
+    color: var(--tan);
+    text-decoration: none;
+    margin: 10px;
+ 
+}
+
+header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: hd;
+    background-color: var(--green);
+}
+
+.shoes-pic,
+.sweater-pic,
+.shirt-pic{
+    width: 300px;
+    height: 250px;
+}
+.shirt{
+    grid-area: st;
+    border: 3px solid rgb(153, 140, 140);
+}
+
+.shoe{
+    grid-area: so;
+    border: 3px solid rgb(153, 140, 140);
+}
+
+article{
+    text-align: center;
+}
+.sweater{
+    grid-area: sr;
+    border: 3px solid rgb(153, 140, 140);
+}
+
+footer{
+    grid-area: ft;
+    background-color: var(--green);
+    text-align: center;
+    color: var(--tan);
+}
+
+
+
+@media screen and (max-width:  500px) {
+    .clothes-wrapper {
+        display: grid;
+        grid-template-columns: 3fr ;
+        grid-template-areas: 
+        "hd"
+        "st"
+        "sr"
+        "so"
+        "ft";
+      }
+}
+
+@media screen and (max-width:  800px) {
+    .clothes-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr ;
+        grid-template-areas: 
+        "hd hd"
+        "st st"
+        "sr sr"
+        "so so"
+        "ft ft";
+      }
+}
+
+
+
+.shirt-dsl-container{
+    grid-area: sd;
+}
+
+.a-title{
+    text-align: center;
+    text-decoration: none;
+    color:   black;
+ 
+
+}
+.a-link{
+    background-color: teal;
+    color: wheat;
+
+}
+
+.shirt-dsl:hover,
+.shirt-ck:hover,
+.shirt-ea:hover{
+    border-bottom: 10px solid var(--green);
+}
+
+
+
+.shirt-ck-container{
+    grid-area: sc;
+}
+.shirt-ea-container{
+    grid-area: se;
+}
+
+img{
+    width: 400px;
+    height: 315px;
+    margin-left: 20px;
+}
+
+.shirt-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "sd sd sc sc se se"
+    "sd sd sc sc se se"
+    "sd sd sc sc se se"
+    "sd sd sc sc se se"
+    "sd sd sc sc se se"
+    "ft ft ft ft ft ft";
+}
+
+.main{
+    grid-area: mn;
+}
+
+
+.diesel-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft";
+}
+
+.card{
+    width: 500px;
+    text-align: center;
+    float: left;
+    margin: 45px;
+    border-left: 4px solid var(--green);
+}

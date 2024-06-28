@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Novak Djokovic",
+        "description": "Novak Djokovic (Belgrado, 22 mei 1987), ook gespeld als Novak \u0110okovi\u0107 (Servisch: \u041d\u043e\u0432\u0430\u043a \u0402\u043e\u043a\u043e\u0432\u0438\u045b), is een Servisch professioneel tennisspeler. Sinds 2020 mag Djokovic de titel dragen van 'Big Titles King', door 66 titels van de vier meest prestigieuze toernooicategorie\u00ebn te hebben behaald.",
+        "country": "Servie",
+        "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/7d\/Novak_Djokovic_%2834775891004%29.jpg\/399px-Novak_Djokovic_%2834775891004%29.jpg"
+    },
+    {
+        "title": "Carlos Alcaraz",
+        "description": "Carlos Alcaraz (El Palmar (Murcia), 5 mei 2003) is een Spaanse tennisser. Alcaraz ontving als zestienjarige maakte hij zijn ATP debuut, vanwege een wildcard voor het in februari gehouden ATP-toernooi van Rio de Janeiro. In de tweede ronde verloor hij van de Argentijn Federico Coria.",
+        "country": "Spanje",
+        "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/Carlos_Alcaraz.jpg\/399px-Carlos_Alcaraz.jpg"
+    },
+    {
+        "title": "Stefanos Tsitsipas",
+        "description": "St\u00e9fanos Tsitsip\u00e1s (Nieuwgrieks: \u03a3\u03c4\u03ad\u03c6\u03b1\u03bd\u03bf\u03c2 \u03a4\u03c3\u03b9\u03c4\u03c3\u03b9\u03c0\u03ac\u03c2) (Athene, 12 augustus 1998) is een Grieks tennisser. Zijn hoogste plaats op de ATP-ranglijst is 3e (9 augustus 2021). Zijn doorbraak was in 2018, met een vierde ronde op Wimbledon 2018 (verlies tegen John Isner), twee finaleplaatsen, namelijk op het ATP-toernooi van Barcelona 2018 en het ATP-toernooi van Montreal\/Toronto (beide keren was de Spanjaard Rafael Nadal te sterk) en zijn eerste toernooiwinst op het ATP-toernooi van Stockholm",
+        "country": "Griekenland",
+        "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/5d\/Tsitsipas_WM17_%2816%29_%2835379193973%29.jpg\/399px-Tsitsipas_WM17_%2816%29_%2835379193973%29.jpg"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "T-Shirt",
+        "description": "T-shirt met ronde hals in wolblend.",
+        "colour": "Donkergrijs",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/emporio-armani-t-shirt-met-ronde-hals-in-wolblend\/?reference=085\/930\/0859309684900000_pro_mod_det_01_1108_1528_1673604947.jpg",
+        "price": 270,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "title": "T-Shirt",
+        "description": "T-shirt met flock logoprint.",
+        "colour": "Zwart",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/emporio-armani-t-shirt-met-flock-logoprint\/?reference=085\/930\/0859309758200000_pro_mod_det_01_1108_1528_7425165.jpg",
+        "price": 160,
+        "sizes": [
+            "S",
+            "M",
+            "L"
+        ]
+    },
+    {
+        "title": "T-Shirt",
+        "description": "T-shirt in lyocellblend met ronde hals.",
+        "colour": "Groen",
+        "imageUrl": "https:\/\/cdn-1.debijenkorf.nl\/web_detail\/emporio-armani-t-shirt-in-lyocellblend-met-ronde-hals\/?reference=085\/930\/0859305459700000_pro_mod_det_01_1108_1528_7007676.jpg",
+        "price": 110,
+        "sizes": [
+            "L",
+            "XL",
+            "XXL"
+        ]
+    }
+]

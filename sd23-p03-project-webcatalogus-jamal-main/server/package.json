@@ -1,0 +1,15 @@
+{
+  "name": "sd23-p03-project-webcatalogus-jamal",
+  "version": "1.0.0",
+  "description": "webcatalog node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jamal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

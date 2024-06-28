@@ -1,0 +1,125 @@
+* {
+    background-color: darkcyan;
+}
+
+.dices {
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+
+.headings {
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+
+.credits {
+    column-count: 5;
+    column-fill: balance;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.dices-computer-player {
+    column-count: 2;
+    font-size: 65px;
+    margin: 0px
+}
+
+.dices-player {
+    column-count: 2;
+    font-size: 65px;
+    margin: 0px;
+}
+
+.message {
+    column-count: 3;
+    column-fill: balance;
+}
+
+.message-box {
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 12px;
+    padding: 5px
+}
+
+.controls {
+    padding: 10px;
+    column-count: 6;
+    column-fill: balance;
+}
+
+.dice {
+    font-size: 64pt;
+}
+
+button {
+    width: 100%;
+}
+
+.higher-button {
+    border: 3px solid darkgreen;
+    border-radius: 12px;
+    background-color: rgb(0, 220, 0);
+    height: 40px;
+
+}
+
+.higher-button:hover {
+    background-color: green;
+}
+
+.lower-button {
+    border: 3px solid darkred;
+    border-radius: 12px;
+    background-color: red;
+    height: 40px;
+}
+
+.lower-button:hover {
+    background-color: darkred;
+}
+
+.dice-button {
+    border: 3px solid darkblue;
+    background-color: rgb(3, 117, 216);
+    border-radius: 12px;
+    height: 40px;
+    margin: 0px;
+
+}
+
+.dice-button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.alert {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    color: red;
+    padding: 30px;
+}
+
+.alert button {
+    font-size: 16px;
+    padding: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+#Home-button {
+    border-color: darkcyan;
+    background-color: darkcyan;
+    width: 60px;
+    height: 70px;
+}
