@@ -52,7 +52,6 @@
         /* Sections styling */
         .section {
             padding: 4rem 1rem;
-            position: relative;
         }
         .section:nth-child(even) {
             background-color: #fafafa;
@@ -75,7 +74,7 @@
             border-radius: 2px;
         }
 
-        /* Skills list styles with icons and progress bars */
+        /* Skills grid with icons and progress bars */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -125,7 +124,7 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
-        /* Projects & Card styles */
+        /* Projects & cards */
         .projects {
             display: flex;
             flex-wrap: wrap;
@@ -160,7 +159,7 @@
             transform: scale(1.05);
         }
 
-        /* Call-to-action button styles */
+        /* Call-to-action buttons */
         .btn-cta {
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
@@ -184,7 +183,7 @@
             text-align: center;
         }
 
-        /* SVG background shapes for decorative effect */
+        /* SVG background shapes for decorations */
         .decor-shape {
             position: absolute;
             top: -50px;
@@ -221,7 +220,7 @@
     <p class="mt-2">Passionate about crafting beautiful, functional websites and exploring new technologies.</p>
 </header>
 
-<!-- Skills & Graphs -->
+<!-- Skills & Visual Graphs -->
 <section id="skills" class="section">
     <div class="container">
         <h2 class="mb-4">My Skills & Expertise</h2>
@@ -248,21 +247,21 @@
                 <div class="progress mb-2"><div class="progress-bar" style="width: 95%;"></div></div>
                 <small>Expert</small>
             </div>
-            <!-- Javascript -->
+            <!-- JavaScript -->
             <div class="skill-card text-center">
                 <div class="skill-icon"><i class="fab fa-js"></i></div>
                 <h5>JavaScript</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 80%;"></div></div>
                 <small>Proficient</small>
             </div>
-            <!-- Database -->
+            <!-- Databases -->
             <div class="skill-card text-center">
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
                 <h5>Databases</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 75%;"></div></div>
                 <small>Skilled</small>
             </div>
-            <!-- Video Editing / Photography -->
+            <!-- Video & Photography -->
             <div class="skill-card text-center">
                 <div class="skill-icon"><i class="fas fa-video"></i></div>
                 <h5>Video & Photo</h5>
@@ -273,7 +272,7 @@
     </div>
 </section>
 
-<!-- About / Intro -->
+<!-- About -->
 <section class="section bg-light">
     <div class="container text-center">
         <h2 class="mb-4">A Little About Me</h2>
@@ -296,7 +295,7 @@
     </div>
 </section>
 
-<!-- Travel Destinations -->
+<!-- Travel & Cultures -->
 <section id="travel" class="section bg-light">
     <div class="container">
         <h2 class="mb-4 text-center">Travel & Cultures</h2>
@@ -311,7 +310,7 @@
     </div>
 </section>
 
-<!-- Projects & Work -->
+<!-- Projects -->
 <section id="projects" class="section">
     <div class="container">
         <h2 class="mb-4 text-center">My Projects</h2>
@@ -320,7 +319,7 @@
             <a href="https://dangerrating.com" target="_blank" class="btn btn-cta">Visit dangerRating.com</a>
         </div>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <!-- Example project -->
+            <!-- Sample Project Card -->
             <div class="card">
                 <a href="#" target="_blank" class="text-decoration-none text-dark">
                     <img src="img/image-1.jpg" class="card-img-top" alt="Project 1" />
@@ -330,7 +329,6 @@
                     </div>
                 </a>
             </div>
-            <!-- Repeat for more projects -->
             <div class="card">
                 <a href="#" target="_blank" class="text-decoration-none text-dark">
                     <img src="img/image-2.jpg" class="card-img-top" alt="Project 2" />
@@ -353,17 +351,18 @@
     </div>
 </section>
 
-<!-- Gallery - Photos & Visuals -->
+<!-- Gallery -->
 <section id="gallery" class="section bg-light">
     <div class="container">
         <h2 class="mb-4 text-center">Photography & Visuals</h2>
         <p class="mb-4 text-center max-w-75 mx-auto">Snapshots from travels and projects.</p>
         <div class="row g-3">
-            <?php for($i=1; $i<=10; $i++): ?>
-                <div class="col-6 col-md-3">
-                    <img src="img/image-<?php echo $i; ?>.jpg" class="gallery-img" alt="Image <?php echo $i; ?>" />
-                </div>
-            <?php endfor; ?>
+            <!-- Example images (replace src with your images) -->
+            <div class="col-6 col-md-3"><img src="img/image-1.jpg" class="gallery-img" alt="Image 1" /></div>
+            <div class="col-6 col-md-3"><img src="img/image-2.jpg" class="gallery-img" alt="Image 2" /></div>
+            <div class="col-6 col-md-3"><img src="img/image-3.jpg" class="gallery-img" alt="Image 3" /></div>
+            <div class="col-6 col-md-3"><img src="img/image-4.jpg" class="gallery-img" alt="Image 4" /></div>
+            <!-- Add more images as needed -->
         </div>
     </div>
 </section>
@@ -381,7 +380,7 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>&copy; <?php echo date("Y"); ?> Redouan Afkir. All rights reserved.</p>
+        <p>&copy; 2024 Redouan Afkir. All rights reserved.</p>
     </div>
 </footer>
 
