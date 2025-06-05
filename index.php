@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redouan Afkir - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        /* Header styles */
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+        }
+        .header .social-icons {
+            margin-top: 1.5rem;
+        }
+        .header .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 0.75rem;
+            transition: color 0.3s;
+        }
+        .header .social-icons a:hover {
+            color: #ffd700;
+        }
+
+        /* Sections styling */
+        .section {
+            padding: 4rem 1rem;
+            position: relative;
+        }
+        .section:nth-child(even) {
+            background-color: #fafafa;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 60px;
+            background-color: #6a11cb;
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Skills list styles with icons and progress bars */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .skill-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            color: #6a11cb;
+        }
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e0e0e0;
+        }
+        .progress-bar {
+            background-color: #6a11cb;
+        }
+
+        /* Hobbies & Travel styles */
+        .list-group {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .list-group-item {
+            background-color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .list-group-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Projects & Card styles */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .card {
+            width: 300px;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Gallery images */
+        .gallery-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Call-to-action button styles */
+        .btn-cta {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn-cta:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            transform: translateY(-2px);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        /* SVG background shapes for decorative effect */
+        .decor-shape {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            z-index: -1;
+        }
+        @media(max-width:768px){
+            h2 { font-size: 2rem; }
+            .projects { flex-direction: column; align-items: center; }
+            .card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header position-relative">
+    <h1>Redouan Afkir</h1>
+    <p class="lead">Creative Web Developer & Tech Enthusiast</p>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourgithub" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    <!-- Decorative SVG shape -->
+    <svg class="decor-shape" viewBox="0 0 100 100" fill="#6a11cb" opacity="0.2">
+        <circle cx="50" cy="50" r="50" />
+    </svg>
+    <p class="mt-3">
+        Check out my latest work at <a href="https://dangerrating.com" target="_blank" class="text-white fw-bold text-decoration-underline">dangerRating.com</a>
+    </p>
+    <p class="mt-2">Passionate about crafting beautiful, functional websites and exploring new technologies.</p>
+</header>
+
+<!-- Skills & Graphs -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="mb-4">My Skills & Expertise</h2>
+        <p class="text-center mb-5 max-w-50 mx-auto">Here's a visual overview of my core skills:</p>
+        <div class="skills-grid">
+            <!-- PHP -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fab fa-php"></i></div>
+                <h5>PHP</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 90%;"></div></div>
+                <small>Expert</small>
+            </div>
+            <!-- Symfony -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                <h5>Symfony</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 85%;"></div></div>
+                <small>Proficient</small>
+            </div>
+            <!-- HTML/CSS -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h5>HTML/CSS</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 95%;"></div></div>
+                <small>Expert</small>
+            </div>
+            <!-- Javascript -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h5>JavaScript</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 80%;"></div></div>
+                <small>Proficient</small>
+            </div>
+            <!-- Database -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h5>Databases</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 75%;"></div></div>
+                <small>Skilled</small>
+            </div>
+            <!-- Video Editing / Photography -->
+            <div class="skill-card text-center">
+                <div class="skill-icon"><i class="fas fa-video"></i></div>
+                <h5>Video & Photo</h5>
+                <div class="progress mb-2"><div class="progress-bar" style="width: 70%;"></div></div>
+                <small>Creative</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About / Intro -->
+<section class="section bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">A Little About Me</h2>
+        <p class="max-w-75 mx-auto mb-4">I'm a passionate developer with a flair for creativity. From building responsive websites to capturing stunning photographs, I thrive on blending technology and art. My journey is driven by curiosity, continuous learning, and a desire to make impactful digital experiences.</p>
+        <a href="#contact" class="btn btn-cta">Let's Collaborate</a>
+    </div>
+</section>
+
+<!-- Hobbies & Interests -->
+<section id="hobbies" class="section">
+    <div class="container">
+        <h2 class="mb-4 text-center">My Hobbies & Interests</h2>
+        <div class="list-group mx-auto mb-5 max-w-600">
+            <div class="list-group-item"><i class="fas fa-book"></i> Reading</div>
+            <div class="list-group-item"><i class="fas fa-camera"></i> Photography</div>
+            <div class="list-group-item"><i class="fas fa-gamepad"></i> Gaming</div>
+            <div class="list-group-item"><i class="fas fa-pencil-ruler"></i> Drawing</div>
+            <div class="list-group-item"><i class="fas fa-search"></i> Researching Random Stuff</div>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Destinations -->
+<section id="travel" class="section bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">Travel & Cultures</h2>
+        <p class="mb-4 text-center max-w-600 mx-auto">Exploring new cultures fuels my creativity. Some favorite destinations:</p>
+        <ul class="list-group mx-auto mb-5 max-w-600">
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Japan - Land of tradition and innovation</li>
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> China - Rich history and vibrant culture</li>
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Morocco - Desert landscapes and markets</li>
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Germany - History meets modernity</li>
+            <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Turkey - Crossroads of continents</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects & Work -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="mb-4 text-center">My Projects</h2>
+        <p class="mb-4 text-center max-w-75 mx-auto">Building solutions and creative works. Highlights:</p>
+        <div class="text-center mb-4">
+            <a href="https://dangerrating.com" target="_blank" class="btn btn-cta">Visit dangerRating.com</a>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <!-- Example project -->
+            <div class="card">
+                <a href="#" target="_blank" class="text-decoration-none text-dark">
+                    <img src="img/image-1.jpg" class="card-img-top" alt="Project 1" />
+                    <div class="card-body">
+                        <h5 class="card-title">Dynamic Rating System</h5>
+                        <p class="card-text">A platform for ratings and reviews.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Repeat for more projects -->
+            <div class="card">
+                <a href="#" target="_blank" class="text-decoration-none text-dark">
+                    <img src="img/image-2.jpg" class="card-img-top" alt="Project 2" />
+                    <div class="card-body">
+                        <h5 class="card-title">Photography Portfolio</h5>
+                        <p class="card-text">Showcasing my visual work.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" target="_blank" class="text-decoration-none text-dark">
+                    <img src="img/image-3.jpg" class="card-img-top" alt="Project 3" />
+                    <div class="card-body">
+                        <h5 class="card-title">Video Editing</h5>
+                        <p class="card-text">Creative video projects for clients.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery - Photos & Visuals -->
+<section id="gallery" class="section bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">Photography & Visuals</h2>
+        <p class="mb-4 text-center max-w-75 mx-auto">Snapshots from travels and projects.</p>
+        <div class="row g-3">
+            <?php for($i=1; $i<=10; $i++): ?>
+                <div class="col-6 col-md-3">
+                    <img src="img/image-<?php echo $i; ?>.jpg" class="gallery-img" alt="Image <?php echo $i; ?>" />
+                </div>
+            <?php endfor; ?>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <div class="container text-center">
+        <h2 class="mb-4">Let's Connect</h2>
+        <p class="mb-3">Want to collaborate or chat? Reach out:</p>
+        <p>Email: <a href="mailto:redouanppo@gmail.com" class="text-decoration-none fw-bold">redouanppo@gmail.com</a></p>
+        <a href="mailto:redouanppo@gmail.com" class="btn btn-cta">Send Email</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; <?php echo date("Y"); ?> Redouan Afkir. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
