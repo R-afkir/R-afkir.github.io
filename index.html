@@ -10,199 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            line-height: 1.6;
-            position: relative;
-        }
-
-        /* Header styles */
-        .header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .header p {
-            font-size: 1.2rem;
-        }
-        .header .social-icons {
-            margin-top: 1.5rem;
-        }
-        .header .social-icons a {
-            color: #fff;
-            font-size: 1.5rem;
-            margin: 0 0.75rem;
-            transition: color 0.3s;
-        }
-        .header .social-icons a:hover {
-            color: #ffd700;
-        }
-
-        /* Sections styling */
-        .section {
-            padding: 4rem 1rem;
-        }
-        .section:nth-child(even) {
-            background-color: #fafafa;
-        }
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            position: relative;
-            display: inline-block;
-            text-align: center;
-        }
-        h2::after {
-            content: '';
-            display: block;
-            height: 4px;
-            width: 60px;
-            background-color: #6a11cb;
-            margin: 0.5rem auto 0;
-            border-radius: 2px;
-        }
-
-        /* Skills grid with icons and progress bars */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-        .skill-card {
-            background: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .skill-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-        .skill-icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-            color: #6a11cb;
-        }
-        .progress {
-            height: 8px;
-            border-radius: 4px;
-            background-color: #e0e0e0;
-        }
-        .progress-bar {
-            background-color: #6a11cb;
-        }
-
-        /* Hobbies & Travel styles */
-        .list-group {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .list-group-item {
-            background-color: #fff;
-            border: none;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .list-group-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        /* Projects & cards */
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-        }
-        .card {
-            width: 300px;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-        }
-
-        /* Gallery images */
-        .gallery-img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .gallery-img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Call-to-action buttons */
-        .btn-cta {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            font-weight: 600;
-            padding: 0.75rem 1.5rem;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 50px;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .btn-cta:hover {
-            background: linear-gradient(135deg, #2575fc, #6a11cb);
-            transform: translateY(-2px);
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        /* SVG background shapes for decorations */
-        .decor-shape {
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            z-index: -1;
-        }
-        @media(max-width:768px){
-            h2 { font-size: 2rem; }
-            .projects { flex-direction: column; align-items: center; }
-            .card { width: 90%; }
-        }
-    </style>
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
 <!-- Header -->
-<header class="header position-relative">
+<header class="header position-relative" data-aos="fade-in">
     <h1>Redouan Afkir</h1>
     <p class="lead">Creative Web Developer & Tech Enthusiast</p>
     <div class="social-icons">
@@ -221,48 +35,48 @@
 </header>
 
 <!-- Skills & Visual Graphs -->
-<section id="skills" class="section">
+<section id="skills" class="section" data-aos="fade-up">
     <div class="container">
-        <h2 class="mb-4">My Skills & Expertise</h2>
+        <h2 class="mb-4 animate__animated animate__fadeInDown">My Skills &amp; Expertise</h2>
         <p class="text-center mb-5 max-w-50 mx-auto">Here's a visual overview of my core skills:</p>
         <div class="skills-grid">
             <!-- PHP -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in">
                 <div class="skill-icon"><i class="fab fa-php"></i></div>
                 <h5>PHP</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 90%;"></div></div>
                 <small>Expert</small>
             </div>
             <!-- Symfony -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="100">
                 <div class="skill-icon"><i class="fas fa-cogs"></i></div>
                 <h5>Symfony</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 85%;"></div></div>
                 <small>Proficient</small>
             </div>
             <!-- HTML/CSS -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="200">
                 <div class="skill-icon"><i class="fab fa-html5"></i></div>
                 <h5>HTML/CSS</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 95%;"></div></div>
                 <small>Expert</small>
             </div>
             <!-- JavaScript -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="300">
                 <div class="skill-icon"><i class="fab fa-js"></i></div>
                 <h5>JavaScript</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 80%;"></div></div>
                 <small>Proficient</small>
             </div>
             <!-- Databases -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="400">
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
                 <h5>Databases</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 75%;"></div></div>
                 <small>Skilled</small>
             </div>
             <!-- Video & Photography -->
-            <div class="skill-card text-center">
+            <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="500">
                 <div class="skill-icon"><i class="fas fa-video"></i></div>
                 <h5>Video & Photo</h5>
                 <div class="progress mb-2"><div class="progress-bar" style="width: 70%;"></div></div>
@@ -273,18 +87,18 @@
 </section>
 
 <!-- About -->
-<section class="section bg-light">
+<section class="section bg-light" data-aos="fade-up">
     <div class="container text-center">
-        <h2 class="mb-4">A Little About Me</h2>
+        <h2 class="mb-4 animate__animated animate__fadeInDown">A Little About Me</h2>
         <p class="max-w-75 mx-auto mb-4">I'm a passionate developer with a flair for creativity. From building responsive websites to capturing stunning photographs, I thrive on blending technology and art. My journey is driven by curiosity, continuous learning, and a desire to make impactful digital experiences.</p>
         <a href="#contact" class="btn btn-cta">Let's Collaborate</a>
     </div>
 </section>
 
 <!-- Hobbies & Interests -->
-<section id="hobbies" class="section">
+<section id="hobbies" class="section" data-aos="fade-up">
     <div class="container">
-        <h2 class="mb-4 text-center">My Hobbies & Interests</h2>
+        <h2 class="mb-4 text-center">My Hobbies &amp; Interests</h2>
         <div class="list-group mx-auto mb-5 max-w-600">
             <div class="list-group-item"><i class="fas fa-book"></i> Reading</div>
             <div class="list-group-item"><i class="fas fa-camera"></i> Photography</div>
@@ -296,9 +110,9 @@
 </section>
 
 <!-- Travel & Cultures -->
-<section id="travel" class="section bg-light">
+<section id="travel" class="section bg-light" data-aos="fade-up">
     <div class="container">
-        <h2 class="mb-4 text-center">Travel & Cultures</h2>
+        <h2 class="mb-4 text-center">Travel &amp; Cultures</h2>
         <p class="mb-4 text-center max-w-600 mx-auto">Exploring new cultures fuels my creativity. Some favorite destinations:</p>
         <ul class="list-group mx-auto mb-5 max-w-600">
             <li class="list-group-item"><i class="fas fa-map-marker-alt"></i> Japan - Land of tradition and innovation</li>
@@ -311,7 +125,7 @@
 </section>
 
 <!-- Projects -->
-<section id="projects" class="section">
+<section id="projects" class="section" data-aos="fade-up">
     <div class="container">
         <h2 class="mb-4 text-center">My Projects</h2>
         <p class="mb-4 text-center max-w-75 mx-auto">Building solutions and creative works. Highlights:</p>
@@ -320,7 +134,7 @@
         </div>
         <div class="d-flex flex-wrap justify-content-center gap-3">
             <!-- Sample Project Card -->
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="100">
                 <a href="#" target="_blank" class="text-decoration-none text-dark">
                     <img src="img/image-1.jpg" class="card-img-top" alt="Project 1" />
                     <div class="card-body">
@@ -329,7 +143,7 @@
                     </div>
                 </a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="200">
                 <a href="#" target="_blank" class="text-decoration-none text-dark">
                     <img src="img/image-2.jpg" class="card-img-top" alt="Project 2" />
                     <div class="card-body">
@@ -338,7 +152,7 @@
                     </div>
                 </a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="300">
                 <a href="#" target="_blank" class="text-decoration-none text-dark">
                     <img src="img/image-3.jpg" class="card-img-top" alt="Project 3" />
                     <div class="card-body">
@@ -352,9 +166,9 @@
 </section>
 
 <!-- Gallery -->
-<section id="gallery" class="section bg-light">
+<section id="gallery" class="section bg-light" data-aos="fade-up">
     <div class="container">
-        <h2 class="mb-4 text-center">Photography & Visuals</h2>
+        <h2 class="mb-4 text-center">Photography &amp; Visuals</h2>
         <p class="mb-4 text-center max-w-75 mx-auto">Snapshots from travels and projects.</p>
         <div class="row g-3">
             <!-- Example images (replace src with your images) -->
@@ -362,29 +176,49 @@
             <div class="col-6 col-md-3"><img src="img/image-2.jpg" class="gallery-img" alt="Image 2" /></div>
             <div class="col-6 col-md-3"><img src="img/image-3.jpg" class="gallery-img" alt="Image 3" /></div>
             <div class="col-6 col-md-3"><img src="img/image-4.jpg" class="gallery-img" alt="Image 4" /></div>
-            <!-- Add more images as needed -->
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="section">
+<section id="contact" class="section" data-aos="fade-up">
     <div class="container text-center">
-        <h2 class="mb-4">Let's Connect</h2>
+        <h2 class="mb-4 animate__animated animate__fadeInDown">Let's Connect</h2>
         <p class="mb-3">Want to collaborate or chat? Reach out:</p>
         <p>Email: <a href="mailto:redouanppo@gmail.com" class="text-decoration-none fw-bold">redouanppo@gmail.com</a></p>
         <a href="mailto:redouanppo@gmail.com" class="btn btn-cta">Send Email</a>
     </div>
 </section>
 
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>&copy; 2024 Redouan Afkir. All rights reserved.</p>
+        <p>© 2024 Redouan Afkir. All rights reserved.</p>
     </div>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS for scroll animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Back to Top button functionality
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'flex';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    document.getElementById('backToTop').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 </body>
 </html>

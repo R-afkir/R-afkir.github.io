@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #ff6f61;
+    --accent-color: #ffd700;
+    --background-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+    --button-gradient: linear-gradient(135deg, #ff6f61, #ffcc70);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Header styles */
+.header {
+    background: var(--background-gradient);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: pulse 2s infinite;
+}
+.header p {
+    font-size: 1.2rem;
+}
+.header .social-icons {
+    margin-top: 1.5rem;
+}
+.header .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.75rem;
+    transition: color 0.3s, transform 0.3s;
+}
+.header .social-icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+/* Sections styling */
+.section {
+    padding: 4rem 1rem;
+    position: relative;
+}
+.section:nth-child(even) {
+    background-color: #fafafa;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+h2::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Skills grid with icons and progress bars */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+.skill-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+}
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+/* Hobbies & Travel styles */
+.list-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.list-group-item {
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.list-group-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Projects & cards */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Gallery images */
+.gallery-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, filter 0.3s;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Call-to-action buttons */
+.btn-cta {
+    background: var(--button-gradient);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-cta:hover {
+    background: linear-gradient(135deg, #ff6f61, #ffd700);
+    transform: translateY(-2px);
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* SVG background shapes for decorations */
+.decor-shape {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s, transform 0.2s;
+}
+#backToTop:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media(max-width:768px){
+    h2 { font-size: 2rem; }
+    .projects { flex-direction: column; align-items: center; }
+    .card { width: 90%; }
+}
